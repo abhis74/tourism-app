@@ -1,13 +1,562 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,html{
+    font-family: 'Montserrat', sans-serif;
+
+    width: 100%;
+}
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../public/fonts/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2);
+  }
+@font-face {
+    font-family: mySecondFont;
+    src: url(../public/fonts/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2);
+  }
+@font-face {
+    font-family: myThirdFont;
+    src: url(../public/fonts/siq_126d03bdd2b5b096575c5888e0c456c2_.ttf);
+  }
+
+.destinationTitle{
+    position: relative;
+    margin-bottom: 38%;
+}
+
+.destinationTitle::before{
+    content: "Destin ation";
+    position: absolute;
+    font-size: 4rem;
+    width: 100px;
+    opacity: 1;
+    color: #dddddd8f;
+    left: 0%;
+    top: -40px;
+    line-height: 0.9;
+}
+.destinationTitle::after{
+    content: "";
+    width: 20%;
+    position: absolute;
+    background: orange;
+    height: 2px;
+    margin-top: 32%;
+    left: 0;
+    z-index: -1;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 30px 30px;
+    z-index: 1;
+    background-color: #e7e7e7c9;
+}
+.logo{
+    width: 100px;
+}
+.logo img{
+    width: 100%;
+    object-fit: contain;
+}
+.headerlinks ul {
+    /* font-family: myFirstFont; */
+    display: flex;
+    list-style: none;
+    gap: 78px
+}
+.headerlinks ul li{
+    font-size: 12px;
+}
+.overlay{
+
+}
+/* .homeimg{
+    background-image: url(../src/im-78494.jpg);
+    background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+} */
+.homeimg{
+    width: 100%;
+    margin-top: -100px;
+    position: relative;
+}
+.homeimg img{
+    width: 100%;
+    object-fit: contain;
+}
+.sliderBox .slick-slide img{
+    width: 250px;
+border-radius: 30px;
+}
+.slick-slide img{
+width: 300px;
+border-radius: 30px;
+}
+.heading1{
+    position: absolute;
+    top: 30%;
+    right: 0;
+    text-align: right;
+}
+.heading1 h1{
+    font-size: 4rem;
+    color: #fff;
+    width: 46%;
+    float: right;
+    right: 0;
+    text-align: left;
+}
+.heading1 h1::before{
+    content: "";
+    height: 2px;
+    width: 126px;
+    background: #fff;
+    position: absolute;
+    /* bottom: -30px; */
+    right: 33%;
+    top: -13%;
+}
+.heading2{
+    padding: 0px 0px 0px 50px;
+    margin-top: -39%;
+ display: flex;
+ gap: 110px;
+}
+.headingAndPara h1{
+    font-size: 3rem;
+    color: #fdfdfd;
+    position: relative;
+}
+.headingAndPara p{
+   
+    color: #fdfdfd;
+    position: relative;
+}
+.headingAndPara h1::before{
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #fff;
+    position: absolute;
+    /* bottom: -30px; */
+    left: 0;
+    top: -13%;
+}
+.heading2 .sliderBox{
+    width: 70%;
+    position: relative;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15% 0;
+}
+.cards div img{
+    width: 275px;
+    border-radius: 38px;
+    object-fit: cover;
+    box-shadow: 12px 8px 42px 4px rgba(0, 0, 0, 0.2);
+}
+.cardImgbox{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+}
+.cardImgbox h2{
+    position: relative;
+    white-space: nowrap;
+}
+.cardImgbox h2::after{
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #f76f2c;
+    position: absolute;
+    bottom: -21px;
+    right: 38%;
+}
+.cardImgbox p{
+    text-align: center;
+}
+.cards:before{
+    content: "";
+    width: 76%;
+    position: absolute;
+    background: orange;
+    height: 2px;
+    margin-top: 10%;
+    z-index: -1;
+}
+.destination{
+    display: flex;
+    padding: 0px 0px 0px 48px;
+    
+    gap: 62px;
+
+}
+.Firstheading{
+    width: 30%;
+}
+
+.destination .slider{
+width: 48%;
+}
+.Number{
+    font-size: 10rem;
+    margin: 0;
+    color: #ffe9e9;
+}
+.gridImg img,.grid1 img,.grid2 img{
+    width: 160px;
+    height: 200px;
+    border-radius: 13px;
+    object-fit: fill;
+
+}
+.secondset{
+    position: relative;
+}
+#four{
+    position: absolute;
+    top: -74px;
+    width: 210px;
+    height: 290px;
+    object-fit: cover;
+}
+#five{
+    position: absolute;
+    right: 0;
+    width: 343px;
+    margin-top: 11px;
+    object-fit: cover;
+}
+#one{
+    width: 210px;
+    object-fit: cover;
+}
+#two{
+    object-fit: cover;
+    height: 300px;
+}
+#three{
+    height: 250px;
+    margin-top: 52px;
+    object-fit: cover;
+}
+.grid1 img,.grid2 img{
+    width: 215px;
+    height: 215px;
+    border-radius: 40px;
+    object-fit: fill;
+}
+.grid1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.grid2{
+    display: flex;
+    gap: 55px;
+    margin-top: 24px;
+}
+.experience{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    background-image: url(./mountain.jpg);
+    height: 770px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 55px;
+}
+.experiences{
+position: relative;
+}
+.experiences::after{
+    content: "Experiences";
+    position: absolute;
+    font-size: 4rem;
+    width: 100px;
+    opacity: 1;
+    color: #ffffff8f;
+    left: -90%;
+}
+.experiences::before{
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #f76f2c;
+    position: absolute;
+    bottom: -29px;
+    right: 0;
+}
+.headingdiv{
+    display: flex;
+    align-items: last baseline;
+    margin-top: 55px;
+}
+.gridImg{
+    margin-top: 7%;
+    padding: 25px 0 0 8%;
+}
+.firstset{
+
+display: flex;
+    gap: 23px;
+}
+.Secondheading{
+    width: 40%;
+}
+
+.travel{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 30px 116px 0px 184px;
+    background-image: url(./airoplane.jpg);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.travelImg{
+
+width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.thirdHeading{
+    width: 30%;
+}
+
+.fourthHeading{
+    background: #f76f2c;
+    clip-path: polygon(0% 0%, 174% 43%, 0% 99%, 0% 57%);
+    width: 50%;
+    display: flex;
+    padding-top: 14%;
+}
+.journryHeading{
+    color: rgb(255, 255, 255);
+    padding-top: 20%;
+    width: 28%;
+    margin-left: 26px;
+    line-height: 1.5;
+    position: relative;
+}
+.afterStyle{
+    position: relative;
+}
+.afterStyle::after{
+    content: "Travel Style";
+    position: absolute;
+    font-size: 4rem;
+    width: 100px;
+    right: 64px;
+    opacity: 0.5;
+    color: #ffffff8a;
+}
+.underline{
+    position: relative;
+    margin-bottom: 39px;
+}
+.underline::after{
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 7px;
+    left: 25px;
+}
+.journryHeading::before{
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #fff;
+    position: absolute;
+    /* bottom: -30px; */
+    left: 0;
+    top: 21%;
+}
+.Img4{
+width: 50%;
+height: 700px;
+clip-path: polygon(100% 0%, 121% 59%, 0% 100%, -36% 49%);
+}
+.Img4 img{
+width: 100%;
+object-fit: cover;
+height: inherit;
+}
+.journeys{
+    display: flex;
+    gap: 45px;
+    height: 700px;
+}
+.NewAgeMap{
+    display: flex;
+    gap: 40px;
+    padding: 0px 87px;
+    margin-bottom: 54px;
+}
+.testimonials{
+    display: flex;
+    gap: 16px;
+    padding: 0px 135px 0px 0px;
+    justify-content: space-between;
+}
+.sixthheading{
+    width: 38%;
+    
+}
+.sixthheading h1{
+    text-align: right;
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.sixthheading h1::after{
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #f76f2c;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+.sixthheading p{
+    width: 100%;
+    text-align: right;
+    padding-left: 45%;
+    margin-bottom: 99px;
+}
+.sixthheading img{
+    width: 100%;
+    object-fit: contain;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    box-shadow: 12px 11px 33px -7px rgba(0, 0, 0, 0.2);
+
+}
+.testimonyImgs img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.testimonyDiv{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.testimony{
+    width: 49%;
+}
+.testimonyImgs{
+    text-align: right;
+}
+.avatarName{
+    text-align: right;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+h2.avatarName::after{
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #f76f2c;
+    position: absolute;
+    bottom: -21px;
+    right: 0;
+}
+.testimony p{
+    text-align: right;
+
+}
+.footer{
+
+    text-align: center;
+    padding: 27px;
+    background-color: gainsboro;
+    margin: 60px 0px;
+}
+.fifthHeading h1{
+    text-align: right;
+}
+.fifthHeading p{
+    text-align: right;
+}
+.fifthHeadingText {
+    position: relative;
+    margin-bottom: 80px;
+}
+.fifthHeadingText::after {
+    content: "";
+    height: 2px;
+    width: 66px;
+    background: #f76f2c;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+.slick-next{
+    right: 36px !important;
+}
+.bookmark img{
+    width: 28px;
+    border-radius: 50%;
+    padding: 0px;
+}
+.bookmark{
+    display: flex;
+    gap: 14px;
+    margin-top: 12px;
+}
+.bookmark button{
+    border: 1px solid #000;
+    padding: 8px 20px;
+    background-color: #ffff;
+    border-radius: 28px;
+
+}
+.fifthHeading .bookmark{
+    justify-content: end;
+}
+.Secondheading .bookmark{
+    justify-content: end;
+    margin-right: 30px;
+}
+.Secondheading p{
+    width: 300px;
+    text-align: end;
+    margin: 0;
+    margin-left: 37%;
+    margin-top: 6%;
+    margin-bottom: 7%;
+}
+.Firstheading p{
+    margin-bottom: 50px;
 }
