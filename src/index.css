@@ -566,7 +566,7 @@ h2.avatarName::after{
     display: none;
    }
    .heading1{
-    top: 13%;
+    top: 26%;
    }
    .heading1 h1{
     font-size: 1rem;
@@ -581,8 +581,8 @@ h2.avatarName::after{
 
    }
    .heading2 {
-    padding: 0px 0px 0px 50px;
-    margin-top: -57%;
+    padding: 0px 5px 0px 7px;
+    margin-top: -53%;
     display: flex;
     gap: 13px;
 }
@@ -603,4 +603,114 @@ h2.avatarName::after{
 .cards:before{
     content: none;
 }
+.Firstheading{
+    width: 100%;
+}
+.destination{
+    flex-direction: column;
+    padding: 0px 0px 0px 24px;
+}
+.destination .slider{
+    width: 100%;
+
+}
+.slick-slide img{
+    
+    width: 154px;
+
+}
+.experience{
+    flex-direction: column-reverse;
+    height: 943px;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.Secondheading{
+    width: 100%;
+}
+.headingdiv{
+    flex-direction: column;
+}
+.gridImg img, .grid1 img, .grid2 img{
+    height: 101px;
+}
+.firstset {
+    display: flex;
+    gap: 3px;
+}
+#one{
+    width: 69px;
+}
+#two{
+    height: 124px;
+    width: 124px;
+}
+#three {
+    height: 168px;
+}
+.gridImg {
+    margin-top: 3%;
+    padding: 0px 0 0 1%;
+
+}
+#four {
+  
+    top: -74px;
+    width: 209px;
+    height: 214px;
+  
+}
+#five {
+    width: 165px;
+}
+.Secondheading p {
+    width: 234px;}
+    .travel {
+        flex-direction: column;
+        
+    padding: 25px 36px 0px 21px;
+    }
+    .thirdHeading{
+        width: 100%;
+    }
+    .travelImg{
+        width: 100%;
+    }
+    .fourthHeading{
+        flex-direction: column;
+    }
+    .fourthHeading>h1{
+        font-size: 6rem;
+    }
+    .journryHeading {
+     
+        font-size: 30px !important;}
+        .journryHeading::before {
+          
+            top: 9%;}
+            .NewAgeMap{
+                flex-direction: column-reverse;
+                padding: 0px 9px;
+            }
+            .map img{
+                width: 100%;
+            }
+            .testimonials{
+                flex-direction: column;
+                padding: 10px 9px 10px 10px;
+            }
+            .sixthheading{
+                width: 100%;
+            }
+            .sixthheading{
+                width: 100%;
+            }
+            .sliderBox .slick-slide img{
+                width: 100px;
+            }
+            .grid1 img, .grid2 img {
+                width: 121px;}
+                .testimonyDiv{
+                    width: 100%;
+                }
   }
